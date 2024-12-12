@@ -11,7 +11,6 @@ jobs:
   build:
     name: Post welcome comment
     runs-on: ubuntu-latest
-    
     steps:
       - run: gh pr comment $PR_URL --body "Welcome to the repository!"
         env:
